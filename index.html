@@ -1,30 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<!-- SEO -->  
-<title>Sphere - One Page Portfolio Template</title>
-<meta name="description" content="A short, clear description of your portfolio or service (max ~155 characters)." />
+<!-- SEO -->
+<title>Johnny Zhou｜全端 + IoT + 系統整合 Landing Page</title>
+<meta name="description" content="全端開發、IoT/現場整合與系統救火。從感測器與網路佈線到 API、資料庫與前端看板，提供能落地的技術解法與排障。" />
 <link rel="canonical" href="https://yourdomain.com/" />
 <meta name="robots" content="index,follow" />
 
-<!-- Favicon -->   
+<!-- Favicon -->
 <link rel="icon" href="./assets/img/global/favicon.ico" sizes="any" />
 
 <!-- Socials -->
-<meta property="og:title" content="Portfolio — Your Name" />
-<meta property="og:description" content="Short, shareable summary." />
+<meta property="og:title" content="Johnny Zhou — 全端開發 x IoT/現場整合" />
+<meta property="og:description" content="從 RJ45/TTL 到 API/資料庫，把現場問題收斂成可運行系統。" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://yourdomain.com" />
 <meta property="og:image" content="./assets/img/og-image.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 
-<!-- Styles + JS -->    
+<!-- Styles + JS -->
 <link rel="preload" href="./assets/css/styles.css?v=0.8" as="style" />
-<link rel="stylesheet" href="./assets/css/colors.css?v=0.8" /> 
-<link rel="stylesheet" href="./assets/css/styles.css?v=0.8" />  
+<link rel="stylesheet" href="./assets/css/colors.css?v=0.8" />
+<link rel="stylesheet" href="./assets/css/styles.css?v=0.8" />
 <script defer src="./assets/js/siema.min.js?v=0.8"></script>
 <script defer src="./assets/js/main.js?v=0.8"></script>
 
@@ -33,108 +33,237 @@
 
 <header class="top">
   <div class="top__left">
-    <img class="top__avatar" src="./assets/img/global/avatar.jpg" alt="Name" />
-    <span class="top__brand">Sphere</span>
+    <img class="top__avatar" src="./assets/img/global/avatar.jpg" alt="Johnny Zhou" />
+    <span class="top__brand">Johnny Zhou</span>
   </div>
   <nav class="top__right">
-  	<div class="links">
-	    <a href="#about" class="top__link">Info</a>
+        <div class="links">
+            <a href="#services" class="top__link">服務</a>
+            <a href="#cases" class="top__link">案例</a>
+            <a href="#skills" class="top__link">技術棧</a>
+            <a href="#faq" class="top__link">FAQ</a>
     </div>
-    <a href="https://onepagelove.com/sphere" class="top__cta">Download <span class="arrow">→</span></a>
+    <a href="#contact" class="top__cta">聯絡合作 <span class="arrow">→</span></a>
   </nav>
 </header>
-<section class="hero">
+<section class="hero" id="hero">
   <div class="boxed">
-    <span class="eyebrow">Courtesy of One Page Love</span>
-    <h1 class="overview">A minimal portfolio template to showcase your work in one page.</h1>
+    <span class="eyebrow">全端開發 × IoT/現場整合 × 排障救火</span>
+    <h1 class="overview">把感測器、網路與系統串起來，讓專案真正落地</h1>
+    <p class="lede">能獨立完成需求釐清、系統設計、開發部署、現場安裝測試到維運改善。擅長把跨領域問題（硬體/網路/資料/前後端）拆解並交付成果。</p>
+    <div class="hero-actions">
+      <a class="button button-primary" href="#contact">聯絡合作</a>
+      <a class="button button-secondary" href="#cases">看案例</a>
+    </div>
+    <ul class="hero-points">
+      <li>跨層排障：從 UART/TTL、MQTT 到 API/前端畫面，定位資料斷點</li>
+      <li>現場落地：材料/佈線/設定/測試/資料回傳驗證都能親自完成</li>
+      <li>成本與可維護性：評估自研 vs 合作，導入版本控管與文件化流程</li>
+    </ul>
   </div>
 </section>
 
-<!-- Portfolio start -->
-<section> 
+<section id="numbers">
   <div class="boxed">
-
-    <!-- Project start -->
-    <div class="slider-group">
-      <div class="siema-wrapper"> 
-        <div class="siema" data-slider="sphere-1">
-          <div><img src="./assets/img/portfolio/sphere-01.jpg" alt="Slide alt text" /></div>
-          <div><img src="./assets/img/portfolio/sphere-01b.jpg" alt="Slide alt text" /></div>
-          <div><img src="./assets/img/portfolio/sphere-01c.jpg" alt="Slide alt text" /></div>        
-        </div>   
+    <h2 class="section-title">Proof Numbers（依專案情境不同）</h2>
+    <div class="card-grid">
+      <div class="stat-card">
+        <p class="stat-value">10 分鐘 → 秒級</p>
+        <p class="stat-desc">報表與查詢效能調優，常見中小型資料量情境</p>
       </div>
-      <span class="slider-controls">
-        <button class="prev" aria-label="Previous slide">Prev</button>
-        <button class="next" aria-label="Next slide">Next</button> 
-      </span> 
+      <div class="stat-card">
+        <p class="stat-value">30x+</p>
+        <p class="stat-desc">協助千萬筆資料的查詢模式重構，速度提升</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-value">成本 ↓ 50%</p>
+        <p class="stat-desc">規劃自研/合作策略，兼顧維運與 BOM 成本</p>
+      </div>
     </div>
-    <h2 class="slider-heading">Project one with slider</h2>
-    <p>Explores the boundaries <a href="https://onepagelove.com/sphere">between light</a>, texture, and motion through a single, meticulously crafted 3D sphere. Designed in Cinema 4D and rendered with Octane, the sphere serves as both a study in photorealism and a playground for expression.</p>
-   <blockquote><p>This could be a behind-the-scenes aside about the design process or event a customer testimonial.</p></blockquote>      
-    <p><a href="https://onepagelove.com/sphere" class="cta-project" title="Visit custom link">Link →</a></p>
-    <hr />
-
-    <!-- Project start -->
-    <div class="slider-group">
-      <div class="siema-wrapper"> 
-        <div class="siema" data-slider="sphere-2">
-          <div><img src="./assets/img/portfolio/sphere-03.jpg" alt="Slide alt text" /></div>
-          <div><img src="./assets/img/portfolio/sphere-03b.jpg" alt="Slide alt text" /></div>
-          <div><img src="./assets/img/portfolio/sphere-03c.jpg" alt="Slide alt text" /></div>         
-        </div>  
-      </div> 
-      <span class="slider-controls">
-        <button class="prev" aria-label="Previous slide">Prev</button>
-        <button class="next" aria-label="Next slide">Next</button> 
-      </span> 
-    </div>
-    <h2 class="slider-heading">Project two with slider</h2>   
-    <p>Explores the boundaries <a href="https://onepagelove.com/sphere">between light</a>, texture, and motion through a single, meticulously crafted 3D sphere. Designed in Cinema 4D and rendered with Octane, the sphere serves as both a study in photorealism and a playground for expression.</p>
-    <p><a href="https://onepagelove.com/sphere" class="cta-project" title="Visit custom link">Link →</a></p>
-    <hr />
-
-    <!-- Project start -->
-    <img src="./assets/img/portfolio/sphere-02.jpg" alt="Image alt text" />
-    <h2>Project three with one image</h2>   
-    <p>Explores the boundaries <a href="https://onepagelove.com/sphere">between light</a>, texture, and motion through a single, meticulously crafted 3D sphere. Designed in Cinema 4D and rendered with Octane, the sphere serves as both a study in photorealism and a playground for expression.</p>
-    <p><a href="https://onepagelove.com/sphere" class="cta-project" title="Visit custom link">Link →</a></p>
-    <hr />
-
-    <!-- Project start -->
-    <img src="./assets/img/portfolio/sphere-04.jpg" alt="Image alt text" />
-    <h2>Project four with one image</h2>
-    <p>Explores the boundaries <a href="https://onepagelove.com/sphere">between light</a>, texture, and motion through a single, meticulously crafted 3D sphere. Designed in Cinema 4D and rendered with Octane, the sphere serves as both a study in photorealism and a playground for expression.</p> 
-    <p><a href="https://onepagelove.com/sphere" class="cta-project" title="Visit custom link">Link →</a></p>
-    <hr />   
-
   </div>
 </section>
-<!-- Portfolio end -->
 
-<section class="bg-alt"> 
+<section id="services">
+  <div class="boxed">
+    <h2 class="section-title">我能解的問題</h2>
+    <p class="section-subtitle">適合需要「一個人能扛多面向」的團隊：Web + IoT + 網路 + 現場。</p>
+    <div class="card-grid">
+      <div class="service-card">
+        <p class="eyebrow">IoT/感測器整合 PoC</p>
+        <h3>資料確實回來、看板能用</h3>
+        <p>感測器/模組接入 → Gateway/通訊 → 資料落地 → Dashboard/告警（Line/Email 等）。預留現場不確定性，快速驗證。</p>
+      </div>
+      <div class="service-card">
+        <p class="eyebrow">系統救火與效能健檢</p>
+        <h3>慢查詢、報表、資料流程排障</h3>
+        <p>定位瓶頸、重構查詢模式、調整索引與資料流程，讓系統回到可維護的速度與穩定度。</p>
+      </div>
+      <div class="service-card">
+        <p class="eyebrow">現場導入與維運 SOP</p>
+        <h3>多據點/場域也能穩定上線</h3>
+        <p>網路環境判斷、通訊測試、資料回傳驗證、故障定位 SOP。可自備材料、支架與工具，提供落地指南。</p>
+      </div>
+      <div class="service-card">
+        <p class="eyebrow">Web GIS / 3D GIS 應用整合</p>
+        <h3>用既有 SDK 做地圖與展示</h3>
+        <p>依需求客製看板、警示、展示系統，搭配資料庫與 API，並保留可替換模組的彈性。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cases">
+  <div class="boxed">
+    <h2 class="section-title">Case Studies（問題 → 我做了什麼 → 結果）</h2>
+    <div class="card-grid">
+      <div class="case-card">
+        <div class="case-media" aria-hidden="true"></div>
+        <h3>溫室/場域感測器現場安裝與資料驗證</h3>
+        <p class="case-meta">網路環境不一、需要確保資料落地</p>
+        <ul>
+          <li>自備/尋找材料完成支架與安裝，判斷網路環境</li>
+          <li>現場設定與測試，驗證資料是否寫入 DB</li>
+          <li>定位斷點並指導同事，建立回傳確認方式</li>
+        </ul>
+        <p class="case-result">結果：（可補：穩定上線/維運方式/改善項）</p>
+        <p class="caption">現場支架與感測器安裝（材料自行評估與採購）</p>
+      </div>
+      <div class="case-card">
+        <div class="case-media" aria-hidden="true"></div>
+        <h3>室內定位模組 Survey：可靠性測試與資料解析</h3>
+        <p class="case-meta">TTL/接線與資料解析缺人熟悉</p>
+        <ul>
+          <li>研究資料格式，規劃測試方法與接線方式</li>
+          <li>自行壓接 GH1.25/杜邦端子，搭建支架進行試驗</li>
+          <li>整理測試筆記供團隊複製</li>
+        </ul>
+        <p class="case-result">結果：（可補：定位品質結論、建議）</p>
+        <p class="caption">UART/TTL 測試線路與資料擷取</p>
+      </div>
+      <div class="case-card">
+        <div class="case-media" aria-hidden="true"></div>
+        <h3>紅外線測距模組：到貨後無人驗證，我負責串接與解析</h3>
+        <p class="case-meta">資料 parse/交換不明、設備無人處理</p>
+        <ul>
+          <li>完成模組測試與資料解析，釐清串接流程</li>
+          <li>補齊可驗證的測試方法與結果</li>
+        </ul>
+        <p class="case-result">結果：（可補：後續是否導入）</p>
+        <p class="caption">模組照片與測試紀錄（可補）</p>
+      </div>
+      <div class="case-card">
+        <div class="case-media" aria-hidden="true"></div>
+        <h3>空氣品質偵測產品逆向：拆解 BOM 與成本/策略評估</h3>
+        <p class="case-meta">評估自研可行性與合作策略</p>
+        <ul>
+          <li>拆機找出各 sensor 規格與型號，推測架構</li>
+          <li>彙整成本與風險，建議改走與廠商合作</li>
+          <li>定義權限開放邏輯，提供給廠商實作</li>
+        </ul>
+        <p class="case-result">結果：避免錯誤投資方向，改用更合理的合作策略</p>
+        <p class="caption">拆解確認 sensor 型號與 BOM 成本估算</p>
+      </div>
+    </div>
+    <div class="case-notes">
+      <p>更多案例（可再補）：地磁車格感測器維運成本下降、AI 人流偵測看板、車輛在席偵測、Web GIS/3D GIS 應用。</p>
+      <p class="caption">每個案例可再附 1～2 張照片或文件連結，以工程紀錄風格呈現。</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="boxed">
+    <h2 class="section-title">技術棧與工具</h2>
+    <div class="tag-groups">
+      <div>
+        <p class="eyebrow">Web / Backend</p>
+        <p class="tag-list">Node.js、PHP、ASP.NET｜MSSQL、MySQL、MongoDB、MariaDB｜WebSocket/Socket、REST API</p>
+      </div>
+      <div>
+        <p class="eyebrow">Frontend</p>
+        <p class="tag-list">React、Bootstrap、HTML/CSS/JavaScript</p>
+      </div>
+      <div>
+        <p class="eyebrow">Desktop / Edge</p>
+        <p class="tag-list">C# WinForm、Mono（Raspberry Pi 上跑 WinForm GUI）、Electron、Unity</p>
+      </div>
+      <div>
+        <p class="eyebrow">IoT / 通訊 / 現場</p>
+        <p class="tag-list">MQTT、UART/TTL、LoRa、RS485、Raspberry Pi｜基本網路排障與環境判斷</p>
+      </div>
+      <div>
+        <p class="eyebrow">流程與協作</p>
+        <p class="tag-list">需求分析、系統規劃、文件化、導入 Git 版控流程</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="bg-alt">
   <div class="bio-section">
-      <div class="bio-image" id="about">
-        <img src="./assets/img/global/author.jpg" alt="Author" />
+      <div class="bio-image">
+        <img src="./assets/img/global/author.jpg" alt="Johnny Zhou" />
       </div>
       <div class="bio-text">
-        <p>
-          'Sphere' is licensed under CC BY 3.0 — free for personal and commercial use, as long as the footer link to One Page Love remains. Remove the credit with a Sphere Pro upgrade.
-        </p>
-        <div class="bio-links">
-          <ul>      
-            <li><a href="https://onepagelove.com/go/sphere-upgrade">Upgrade</a></li>
-            <li><a href="https://onepagelove.com/sphere">Download</a></li>              
-          </ul>
-          <ul>
-            <li><a href="https://onepagelove.com/sphere">LinkedIn</a></li>
-            <li><a href="https://onepagelove.com/sphere">Email</a></li>
-          </ul>
-        </div>
+        <h2 class="section-title">關於我（務實版）</h2>
+        <p>專注用數位技術解決實際問題，擅長需求分析、系統整合與排障。能把跨領域問題收斂成可交付成果：現場設備、通訊、網路、資料庫、API 到前端看板都能處理。</p>
+        <p>不是 React 框架內部原理或專職 DBA 的專家；但能在中小型系統做出可靠的前後端交付，並快速把效能/資料問題修到合理水位。若需專職 DBA 或大型分散式架構，會如實評估並提出方案（含外部支援建議）。</p>
+        <p class="tag-list">位置：Taiwan, Kaohsiung（可遠端）｜名稱：Johnny Zhou｜Full-stack Developer / Solution Engineer</p>
+        <p class="tag-list">個人網站：<a href="http://rainbowrain.tw/">rainbowrain.tw</a>｜React180：<a href="http://rainbowrain.tw/react180/">rainbowrain.tw/react180/</a></p>
       </div>
     </div>
 </section>
+
+<section id="faq">
+  <div class="boxed">
+    <h2 class="section-title">FAQ</h2>
+    <div class="faq-grid">
+      <div class="faq-card">
+        <h3>你是 React 專家嗎？</h3>
+        <p>我能用 React 完成實際可上線的介面與系統整合，但不把自己定位成框架內部原理的專家；強項是把需求與跨系統整合做成可交付成果。</p>
+      </div>
+      <div class="faq-card">
+        <h3>你能處理資料庫效能嗎？</h3>
+        <p>擅長針對慢查詢、報表與資料流程定位與改善，在中小型系統把效能拉回合理範圍；若是大型分散式或需專職 DBA，會如實評估並提出可行方案（含外部支援）。</p>
+      </div>
+      <div class="faq-card">
+        <h3>你能處理網路/現場問題嗎？</h3>
+        <p>熟悉系統性查修流程，能從現場佈線/設備設定一路查到服務層與資料層，確保資料真的有回來、系統真的能跑。</p>
+      </div>
+      <div class="faq-card">
+        <h3>遠端合作方式？</h3>
+        <p>可先預約 30 分鐘技術諮詢確認需求；視情況提供 PoC、階段性交付與文件，並協助團隊導入版本控管與溝通節點。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="bg-alt">
+  <div class="boxed">
+    <h2 class="section-title">聯絡合作 / 接案諮詢 / 面談</h2>
+    <p class="section-subtitle">告訴我你想解決的實際問題，包含場域條件、系統現況與時程。可先約 30 分鐘線上技術諮詢。</p>
+    <div class="contact-grid">
+      <div>
+        <p class="eyebrow">Email</p>
+        <p class="tag-list"><a href="mailto:rainbowrain0930@gmail.com">rainbowrain0930@gmail.com</a></p>
+      </div>
+      <div>
+        <p class="eyebrow">LinkedIn</p>
+        <p class="tag-list"><a href="https://www.linkedin.com/in/johnny-jhou-7739a5240/">johnny-jhou-7739a5240</a></p>
+      </div>
+      <div>
+        <p class="eyebrow">GitHub</p>
+        <p class="tag-list"><a href="https://github.com/johnny-ai365-vibecoding-30days">johnny-ai365-vibecoding-30days</a></p>
+      </div>
+    </div>
+    <div class="hero-actions">
+      <a class="button button-primary" href="mailto:rainbowrain0930@gmail.com">預約 30 分鐘技術諮詢</a>
+      <a class="button button-secondary" href="#hero">回到頁首</a>
+    </div>
+  </div>
+</section>
 <footer class="site-footer">
-  <p class="footer-left">© 2025 Your Brand or Name</p>
+  <p class="footer-left">© 2025 Johnny Zhou</p>
   <p class="footer-right">
     <a href="https://onepagelove.com/sphere">Sphere Template</a> by One Page Love
   </p>
