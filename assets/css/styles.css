@@ -549,3 +549,145 @@ a.cta-project:hover {
 .bio-links a:hover::before {
   transform: translateX(3px);
 }
+
+/* ------------------------------------------------------------------------------- */
+/* Custom layouts for Johnny's landing page */
+/* ------------------------------------------------------------------------------- */
+.hero__content .lede {
+  font-size: 1.25rem;
+  line-height: 1.9rem;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  line-height: 1.7rem;
+  margin: 0 auto 20px auto;
+  max-width: 780px;
+}
+
+.microcopy {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.section-heading h2 {
+  margin-bottom: 16px;
+}
+
+.cta-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 20px 0 12px 0;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button--ghost {
+  background: transparent;
+}
+
+.stat-grid,
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.card-grid.small-gap {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.stat-card,
+.card,
+.case-card,
+.faq-item,
+.contact-panel {
+  border: 1px solid currentColor;
+  border-radius: 14px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.stat-card h3,
+.card h3,
+.case-card h3,
+.faq-item h3 {
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+}
+
+.stat-note {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.case-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.media-placeholder {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  opacity: 0.8;
+  padding: 12px;
+  border: 1px dashed currentColor;
+  border-radius: 10px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-list li {
+  border: 1px solid currentColor;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+
+.faq-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.contact-panel {
+  max-width: 1020px;
+}
+
+@media (max-width: 600px) {
+  .section-heading {
+    text-align: left;
+  }
+
+  .section-heading h2 {
+    font-size: 1.75rem;
+  }
+}
