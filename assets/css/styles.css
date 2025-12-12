@@ -236,6 +236,18 @@ select {
   font-size: 1.25rem;
   font-weight: bold;
 }
+.top {
+  background: rgba(15, 17, 21, 0.7);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.top__brand {
+  letter-spacing: -0.02em;
+}
 .top__right {
   display: flex;
   align-items: center;
@@ -255,9 +267,14 @@ select {
   font-size: 1rem;
   text-decoration: none;
   transition: color 0.2s ease-in, border-color 0.2s ease-in;
+  opacity: 0.9;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
 }
 .top__link:hover {
   transition: color 0.1s ease-out, border-color 0.1s ease-out;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.6);
 }
 .top__cta {
   padding: 4px 16px;
@@ -266,6 +283,11 @@ select {
   text-decoration: none;
   display: inline-flex;
   transition: color 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, rgba(120, 186, 255, 0.3), rgba(78, 137, 255, 0.18));
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
 .top__cta .arrow {
   display: inline-block;
@@ -309,6 +331,28 @@ select {
   }
 }
 
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-top: 120px;
+  padding-bottom: 96px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 72% 40%, rgba(83, 172, 255, 0.22), transparent 30%),
+    radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.08), transparent 26%);
+  pointer-events: none;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
 /* ------------------------------------------------------------------------------- */
 /* Page sections */
 /* ------------------------------------------------------------------------------- */
@@ -318,6 +362,22 @@ section {
 }
 section p {
   margin-bottom: 40px;
+}
+
+body.scheme-midnight {
+  background: radial-gradient(circle at 20% 20%, rgba(54, 95, 160, 0.18), transparent 32%),
+    radial-gradient(circle at 80% 0%, rgba(130, 103, 214, 0.18), transparent 28%),
+    #0f1115;
+  color: #e9edf3;
+}
+
+section.bg-alt {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+  border-radius: 24px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 section p a {
   text-decoration: underline;
@@ -577,6 +637,11 @@ a.cta-project:hover {
 }
 
 .section-heading h2 {
+  font-size: 2.15rem;
+  letter-spacing: -0.05em;
+}
+
+.section-heading h2 {
   margin-bottom: 16px;
 }
 
@@ -597,6 +662,9 @@ a.cta-project:hover {
   border: 1px solid currentColor;
   text-decoration: none;
   transition: transform 0.2s ease, background-color 0.2s ease;
+  color: #0f1115;
+  background: #f5f8ff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
 
 .button:hover {
@@ -604,7 +672,8 @@ a.cta-project:hover {
 }
 
 .button--ghost {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.05);
+  color: #e9edf3;
 }
 
 .stat-grid,
@@ -624,10 +693,11 @@ a.cta-project:hover {
 .case-card,
 .faq-item,
 .contact-panel {
-  border: 1px solid currentColor;
-  border-radius: 14px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.22);
 }
 
 .stat-card h3,
@@ -651,12 +721,7 @@ a.cta-project:hover {
 }
 
 .media-placeholder {
-  margin-top: 12px;
-  font-size: 0.95rem;
-  opacity: 0.8;
-  padding: 12px;
-  border: 1px dashed currentColor;
-  border-radius: 10px;
+  display: none;
 }
 
 .tag-list {
