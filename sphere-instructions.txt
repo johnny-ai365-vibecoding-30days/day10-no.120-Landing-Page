@@ -1,0 +1,85 @@
+=====================================================
+Template Name: Sphere (v0.8)
+=====================================================
+URL: https://onepagelove.com/sphere
+Demo: https://onepagelove.com/go/sphere-demo
+Credit: One Page Love
+ 
+
+=====================================================
+📄 CONTENTS:
+=====================================================
+1. License
+2. File structure
+3. Getting started
+4. Pro version details
+5. Credits
+
+ 
+=====================================================
+🎖️ LICENSE: CC BY 3.0 
+   (Creative Commons Attribution 3.0 License)
+=====================================================
+✅ Free for personal and commercial use  
+❌ No resale or redistribution  
+❌ Do not claim the design as your own  
+🔗 You must retain the footer credit linking to One Page Love  
+
+➡️ Want to remove attribution?   
+Get the Pro version for $9 and use it without the CC BY 3.0 license.
+(upgrade details below)
+
+ 
+=====================================================
+📄 FILE STRUCTURE:
+=====================================================
+.html file   	    → The main template HTML file to edit
+/assets/css/      → Stylesheets
+/assets/js/       → JavaScript files
+/assets/img/      → Images (replace with your own)
+
+ 
+=====================================================
+🛠️ QUICK START:
+=====================================================
+1. Open the root '.html' file in any code editor.
+2. Replace the content with your own.
+3. Replace placeholder images in /assets/img/.
+4. Open the file in your browser to preview it.
+
+## FAQ: how do I change the color scheme?
+It's default to dark. Change the scheme by renaming the
+<body> class to align with these:
+'scheme-midnight'   = dark (your default right now)
+'scheme-daylight'   = light
+'scheme-ocean'      = blue
+'scheme-forest'     = green
+
+ 
+=====================================================
+✨ UPGRADE: TO SPHERE PRO ($9)
+=====================================================
+🔗 Remove footer credit
+📬 Email support
+❤️ Funds future development 
+→ Upgrade: https://onepagelove.com/go/sphere-upgrade
+
+
+=====================================================
+🙏 CREDITS: 
+=====================================================
+- Designed and coded by One Page Love: https://onepagelove.com 
+- Demo images courtesy of Unsplash: https://unsplash.com 
+- Image sliders by Siema: https://pawelgrzybek.github.io/siema 
+
+ 
+=====================================================
+🐞 REPORT BUGS:
+=====================================================
+Please send any issues to: support@onepagelove.com 
+and I'll get back to you with a fix ASAP!
+
+Hope this free template helps you launch something awesome!
+
+Cheers,
+Rob  
