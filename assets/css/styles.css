@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* ------------------------------------------------------------------------------- */
 /* Reset */
 /* ------------------------------------------------------------------------------- */
@@ -76,28 +77,47 @@ body {
   font-weight: 400;
 }
 
-.bio-section, .site-footer, section, .top {
+.bio-section,
+.site-footer,
+section,
+.top {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
 @media (max-width: 600px) {
-  .bio-section, .site-footer, section, .top {
+
+  .bio-section,
+  .site-footer,
+  section,
+  .top {
     padding-top: 40px;
     padding-bottom: 40px;
   }
 }
 
-.bio-section, .site-footer, div.boxed, .eyebrow, .top {
+.bio-section,
+.site-footer,
+div.boxed,
+.eyebrow,
+.top {
   width: 100%;
   max-width: 1020px;
   margin-left: auto;
   margin-right: auto;
 }
+
 @media (max-width: 1100px) {
-  .bio-section, .site-footer, div.boxed, .eyebrow, .top {
+
+  .bio-section,
+  .site-footer,
+  div.boxed,
+  .eyebrow,
+  .top {
     width: calc(100% - 80px);
   }
 }
+
 .overview {
   width: 100%;
   max-width: 800px;
@@ -105,7 +125,9 @@ body {
   margin-right: auto;
 }
 
-.testimonial, div.boxed blockquote, div.boxed p,
+.testimonial,
+div.boxed blockquote,
+div.boxed p,
 div.boxed h2 {
   width: 100%;
   max-width: 480px;
@@ -121,6 +143,7 @@ html {
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
+
 @media (max-width: 600px) {
   html {
     font-size: 14px;
@@ -133,7 +156,9 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -168,7 +193,8 @@ hr {
   border-bottom: 2px dotted;
 }
 
-b, strong {
+b,
+strong {
   font-style: normal;
   font-weight: 600;
 }
@@ -182,11 +208,13 @@ blockquote {
   padding: 0 20px 0 20px;
   border-left: 1px solid;
 }
+
 blockquote a {
   text-decoration: underline;
 }
 
-i, em {
+i,
+em {
   font-style: italic;
 }
 
@@ -215,50 +243,60 @@ select {
   justify-content: space-between;
   align-items: center;
 }
+
 .top__left {
   display: flex;
   align-items: center;
   gap: 20px;
 }
+
 .top__avatar {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
 }
+
 @media (max-width: 600px) {
   .top__avatar {
     width: 40px;
     height: 40px;
   }
 }
+
 .top__brand {
   font-size: 1.25rem;
   font-weight: bold;
 }
+
 .top__right {
   display: flex;
   align-items: center;
   gap: 40px;
 }
+
 @media (max-width: 600px) {
   .top__right {
     gap: 20px;
   }
 }
+
 .top .links {
   display: flex;
   align-items: center;
   gap: 40px;
 }
+
 .top__link {
   font-size: 1rem;
   text-decoration: none;
   transition: color 0.2s ease-in, border-color 0.2s ease-in;
 }
+
 .top__link:hover {
   transition: color 0.1s ease-out, border-color 0.1s ease-out;
 }
+
 .top__cta {
   padding: 4px 16px;
   border-radius: 999px;
@@ -267,11 +305,13 @@ select {
   display: inline-flex;
   transition: color 0.3s;
 }
+
 .top__cta .arrow {
   display: inline-block;
   transition: transform 0.3s ease;
   margin-left: 0.25em;
 }
+
 .top__cta:hover .arrow {
   transform: translateX(3px);
 }
@@ -287,6 +327,7 @@ select {
   letter-spacing: 1px;
   text-align: center;
 }
+
 @media (max-width: 600px) {
   .eyebrow {
     text-align: left;
@@ -300,6 +341,7 @@ select {
   line-height: 4.4rem;
   text-align: center;
 }
+
 @media (max-width: 600px) {
   .overview {
     text-align: left;
@@ -316,16 +358,20 @@ section {
   width: 100%;
   margin: 0;
 }
+
 section p {
   margin-bottom: 40px;
 }
+
 section p a {
   text-decoration: underline;
 }
+
 section hr {
   border: none;
   height: 160px;
 }
+
 @media (max-width: 600px) {
   section hr {
     height: 80px;
@@ -337,27 +383,33 @@ div.boxed img {
   max-width: 1020px;
   border-radius: 12px;
 }
+
 div.boxed p,
 div.boxed h2 {
   font-size: 1.25rem;
   letter-spacing: -0.05rem;
   line-height: 2rem;
 }
+
 div.boxed h2 {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
 div.boxed blockquote {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+
 div.boxed blockquote p {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+
 div.boxed p a {
   transition: color 0.2s ease-in, border-color 0.2s ease-in;
 }
+
 div.boxed p a:hover {
   transition: color 0.1s ease-out, border-color 0.1s ease-out;
 }
@@ -400,12 +452,14 @@ div.boxed p a:hover {
   margin: 0;
   display: flex;
 }
-.siema > div {
+
+.siema>div {
   flex-shrink: 0;
   width: 100%;
   display: flex;
   align-items: flex-start;
 }
+
 .siema img {
   display: block;
   vertical-align: top;
@@ -424,6 +478,7 @@ div.boxed p a:hover {
   gap: 20px;
   margin-top: 16px;
 }
+
 .slider-controls button {
   cursor: pointer;
   border-bottom: 1px solid;
@@ -442,6 +497,7 @@ a.cta-project {
   padding: 2px 8px;
   transition: color 0.2s ease-in, border-color 0.2s ease-in;
 }
+
 a.cta-project:hover {
   transition: color 0.1s ease-out, border-color 0.1s ease-out;
 }
@@ -455,6 +511,7 @@ a.cta-project:hover {
   text-align: center;
   margin-bottom: 40px;
 }
+
 .testimonial blockquote {
   border-left: none;
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -464,22 +521,28 @@ a.cta-project:hover {
   font-style: normal;
   quotes: "“" "”" "‘" "’";
 }
+
 .testimonial blockquote p {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+
 .testimonial blockquote p::before {
   content: open-quote;
 }
+
 .testimonial blockquote p::after {
   content: close-quote;
 }
+
 .testimonial figcaption {
   font-size: 1rem;
 }
+
 .testimonial figcaption strong {
   font-weight: normal;
 }
+
 /* ------------------------------------------------------------------------------- */
 /* Bios, Info, About section */
 /* ------------------------------------------------------------------------------- */
@@ -494,11 +557,13 @@ a.cta-project:hover {
 .bio-image {
   width: 100%;
 }
+
 @media (min-width: 1100px) {
   .bio-image {
     width: 48%;
   }
 }
+
 .bio-image img {
   width: 100%;
   border-radius: 12px;
@@ -509,6 +574,7 @@ a.cta-project:hover {
   font-size: 1.6875rem;
   line-height: 2rem;
 }
+
 @media (min-width: 1100px) {
   .bio-text {
     width: 48%;
@@ -526,26 +592,32 @@ a.cta-project:hover {
   line-height: 2rem;
   flex-wrap: wrap;
 }
+
 .bio-links ul {
   list-style: none;
   padding: 0;
 }
+
 .bio-links ul li {
   margin-bottom: 8px;
 }
+
 .bio-links a {
   text-decoration: none;
   position: relative;
 }
+
 .bio-links a::before {
   content: "→";
   margin-right: 0.5rem;
   display: inline-block;
   transition: transform 0.3s ease;
 }
+
 .bio-links a:hover {
   text-decoration: none;
 }
+
 .bio-links a:hover::before {
   transform: translateX(3px);
 }
@@ -623,6 +695,7 @@ a.cta-project:hover {
   gap: 16px;
   flex-wrap: wrap;
   margin: 20px 0 12px 0;
+  justify-content: center;
 }
 
 .button {
